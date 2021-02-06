@@ -23,7 +23,7 @@ function App() {
 
         <div id="content-top">
           <div id="top-left">
-            <p id='title' > concursos</p>
+            <p id='title' > CONCURSOS</p>
             {sections1.map(() => {
               return (
                 <div id="container-cursos-right">
@@ -45,13 +45,13 @@ function App() {
           </div>
           <div id="top-right">
 
-            <p id="title">Lo recomendado para vos</p>
+            <p id="title">LO RECOMENDADO PARA VOS</p>
             < div id="sections2">
               {section2.map(() => {
                 return (
-                  <div id='sections2-content'>
+                  <div className="sections2-class" id='sections2-content'>
                     <img src={picture.default} width="100%" height="234" />
-                    <span style={{ textAlign: 'left', fontWeight: 'bold', marginTop: 10 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam magna ex, pulvinar ut efficitur vel, condimentum sit amet velit. </span>
+                    <span style={{ textAlign: 'left', fontWeight: 'bold', marginTop: 10, marginBottom: 10 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam magna ex, pulvinar ut efficitur vel, condimentum sit amet velit. </span>
                   </div>)
               })}
             </div>
@@ -60,26 +60,27 @@ function App() {
         <div id="content-down">
 
           <div id="down-section1" className="content">
-            <p id="title">Que quieres escuchar</p>
+            <p id="title">QUE QUERÉS ESCUCHAR?</p>
             <div id="down-section1-content">
               {section3.map((image) => {
                 return (
                   <div style={{ flex: 1, height: 200, paddingRight: 10, paddingTop: 10 }}>
-                    <img src={image} width="100%" style={{ minWidth: 100, maxWidth: 200 }} height={200} />
+                    <img src={image} id="imagen3" height={200} />
                   </div>
                 )
               })}
             </div>
+            <div style={{ textAlign: 'right', paddingRight: 15 }}>ver mas</div>
           </div>
           <div id='down-section2' className="content">
-            <p id="title">Nuestras figuras</p>
+            <p id="title">NUESTRAS FIGURAS</p>
             <div id="down-section2-content">
               {sections1.map(() => (
                 < div style={{ display: 'flex', flexDirection: 'column' }}>
                   <div id="down-section2-left">
                     <span style={{ fontWeight: 'bold', paddingBottom: 10, paddingTop: 10 }}>Pelado Lopez</span>
                   </div>
-                  <div style={{ display: 'flex' }}>
+                  <div id='figure-content' style={{ display: 'flex' }}>
                     <img src={picture.default} style={{ width: 80, height: 80, borderRadius: "50%" }} />
                     < span style={{ paddingLeft: 10, textAlign: 'left' }}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt at urna nec condimentum. Aenean dapibus, mi eget placerat finibus, lorem augue vul...
@@ -90,13 +91,13 @@ function App() {
             </div>
           </div>
           <div id='down-section3' className="content" >
-            <p id='title'>ultimas noticias de espectaculos</p>
+            <p id='title'>ÚLTIMAS NOTICIAS DE ESPECTÁCULOS</p>
             < div id="sections2">
               {sections4.map(() => {
                 return (
                   <div id='sections2-content'>
-                    <img src={picture.default} width="100%" height="200" />
-                    <span style={{ textAlign: 'left', fontWeight: 'bold', marginTop: 10 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam magna ex, pulvinar ut efficitur vel, condimentum sit amet velit. </span>
+                    <img id='imagen4' src={picture.default} />
+                    <span style={{ textAlign: 'left', fontWeight: 'bold', marginTop: 10, marginBottom: 15 }}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam magna ex, pulvinar ut efficitur vel, condimentum sit amet velit. </span>
                   </div>)
               })}
             </div>
@@ -117,6 +118,16 @@ const AppContainer = styled.div`
   margin:auto;
   display:flex;
   justify-content:center;
+
+  #imagen3{
+    width:100%;
+    min-width: 100px;
+  }
+
+  #imagen4{
+    width:100%;
+    height:150px
+  }
  
   /*  ------------------------ content top ---------------------- */
 
@@ -246,6 +257,82 @@ const AppContainer = styled.div`
     #top-right {
       padding-left:0px
     }
+
+    #imagen3{
+      min-width: 370px;
+      width:100%
+    }
+    #imagen4{
+      min-width: 350px;
+      width:100%
+    }
+    .content{
+      padding-left:10px
+    }
+
+    #sections2{
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    #down-section2-left{
+      align-items:center
+    }
+
+    .sections2-class{
+       min-width: 300px !important;
+    }
+    #figure-content{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+    }
       
   }
+
+  @media (max-width: 620px) {
+
+    #sections2-content{
+      padding-right:0px
+    }
+
+    #sections2{
+      min-width:0;
+      flex-wrap:wrap;
+      flex-direction:column;
+    }
+    .sections2-class{
+       min-width: 0px !important;
+    }
+
+    #imagen3{
+      min-width:0px
+    } 
+
+    #down-section2-content{
+      flex-direction:column;
+      padding: 20px;
+    }
+
+    #container-cursos-right{
+      flex-direction:column;
+      min-width:0px;
+    }
+
+
+    #down-section1-content{
+      flex-direction:column;
+    }
+
+    #top-left{
+      min-width:0px;
+      padding-right:10px;
+    }
+
+    #imagen4{
+      min-width:0px;
+    }
+  }
+
+  
 `
