@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/layout/static/css/main.a0f92c83.chunk.css",
+    "main.js": "/layout/static/js/main.7e3d34be.chunk.js",
+    "main.js.map": "/layout/static/js/main.7e3d34be.chunk.js.map",
+    "runtime-main.js": "/layout/static/js/runtime-main.723dcc79.js",
+    "runtime-main.js.map": "/layout/static/js/runtime-main.723dcc79.js.map",
+    "static/js/2.577e6c7d.chunk.js": "/layout/static/js/2.577e6c7d.chunk.js",
+    "static/js/2.577e6c7d.chunk.js.map": "/layout/static/js/2.577e6c7d.chunk.js.map",
+    "static/js/3.740dd81a.chunk.js": "/layout/static/js/3.740dd81a.chunk.js",
+    "static/js/3.740dd81a.chunk.js.map": "/layout/static/js/3.740dd81a.chunk.js.map",
+    "index.html": "/layout/index.html",
+    "static/css/main.a0f92c83.chunk.css.map": "/layout/static/css/main.a0f92c83.chunk.css.map",
+    "static/js/2.577e6c7d.chunk.js.LICENSE.txt": "/layout/static/js/2.577e6c7d.chunk.js.LICENSE.txt",
+    "static/media/messi.jpg": "/layout/static/media/messi.2481f2b4.jpg",
+    "static/media/music.jpg": "/layout/static/media/music.f00d0055.jpg",
+    "static/media/music5.jpg": "/layout/static/media/music5.0a63b466.jpg",
+    "static/media/music6.jpg": "/layout/static/media/music6.5a6194ef.jpg",
+    "static/media/musica1.jpg": "/layout/static/media/musica1.8efb7150.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.723dcc79.js",
+    "static/js/2.577e6c7d.chunk.js",
+    "static/css/main.a0f92c83.chunk.css",
+    "static/js/main.7e3d34be.chunk.js"
+  ]
+}
